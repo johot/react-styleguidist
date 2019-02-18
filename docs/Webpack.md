@@ -96,9 +96,10 @@ If you’re using [Create React App](https://github.com/facebook/create-react-ap
 3. Update your `styleguide.config.js`:
 
    ```javascript
-   module.exports = {
-     propsParser: require('react-docgen-typescript').parse
-   }
+    module.exports = {
+      propsParser: require("react-docgen-typescript").parse,
+      webpackConfig: require("react-scripts/config/webpack.config")
+    };
    ```
 
 ## Non-webpack projects
